@@ -4,11 +4,17 @@
 	let seconds;
 
 	setInterval(() => {
-		const date = new Date();
-		hours = date.getHours();
-		minutes = date.getMinutes();
-		seconds = date.getSeconds();
+		computeHands();
 	}, 1000);
+
+	computeHands();
+
+	function computeHands() {
+		const now = new Date();
+		hours = now.getHours();
+		minutes = now.getMinutes();
+		seconds = now.getSeconds();
+	}
 </script>
 
 <div class="clock-ctn">
@@ -31,8 +37,8 @@
 
 <style>
 	.clock-ctn {
-		width: calc(min(100vh, 100vw) - 1em);
-		height: calc(min(100vh, 100vw) - 1em);
+		width: calc(min(100vh, 100vw) - 3em);
+		height: calc(min(100vh, 100vw) - 3em);
 	}
 
 	.clock {
@@ -42,9 +48,9 @@
 		font-size: 3rem;
 		font-family: monospace;
 		border-radius: 50%;
-		border: 5px solid black;
-		width: calc(100% - 2 * 5px);
-		height: calc(100% - 2 * 5px);
+		border: 15px solid black;
+		width: calc(100% - 2 * 15px);
+		height: calc(100% - 2 * 15px);
 	}
 
 	.hand-ctn {
@@ -67,35 +73,35 @@
 
 	.seconds-hand {
 		background-color: rgb(255, 0, 0);
-		height: 50%;
-		transform: translateY(calc(0% + 0.5em));
+		height: 40%;
+		transform: translateY(calc(20% + 40px));
 	}
 
 	.minutes-hand-ctn {
-		width: 30px;
+		width: 25px;
 		z-index: 2;
 	}
 
 	.minutes-hand {
 		background-color: #000000;
-		height: 40%;
-		transform: translateY(calc(20% + 0.5em));
+		height: 30%;
+		transform: translateY(calc(60% + 40px));
 	}
 
 	.hours-hand-ctn {
-		width: 40px;
+		width: 30px;
 		z-index: 1;
 	}
 
 	.hours-hand {
 		background-color: #000000;
-		height: 30%;
-		transform: translateY(calc(60% + 0.5em));
+		height: 20%;
+		transform: translateY(calc(140% + 40px));
 	}
 
 	.center {
-		width: 0.75em;
-		height: 0.75em;
+		width: 30px;
+		height: 30px;
 		background-color: #000000;
 		border-radius: 50%;
 		position: absolute;
