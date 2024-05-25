@@ -5,7 +5,7 @@
 
 	setInterval(() => {
 		computeHands();
-	}, 1000);
+	}, 50);
 
 	computeHands();
 
