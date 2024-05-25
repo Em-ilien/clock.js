@@ -73,7 +73,7 @@
 	}
 
 	.seconds-hand-ctn {
-		width: 20px;
+		width: 10px;
 		z-index: 3;
 	}
 
@@ -95,7 +95,7 @@
 	}
 
 	.hours-hand-ctn {
-		width: 30px;
+		width: 32.5px;
 		z-index: 1;
 	}
 
