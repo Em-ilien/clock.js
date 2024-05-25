@@ -1,18 +1,14 @@
-# create-svelte
+# Clock.js
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This project is a clock webapp.
 
-## Creating a project
+See demo at https://www.em-ilien.fr/clock/
 
-If you're seeing this, you've probably already done this step. Congrats!
+![alt text](image.png)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Tech stack
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Svelte, SvelteKit, vite
 
 ## Developing
 
