@@ -51,6 +51,11 @@
 		border: 15px solid black;
 		width: calc(100% - 2 * 15px);
 		height: calc(100% - 2 * 15px);
+		background: #e8c9a957;
+		background-image: url('clock.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
 	}
 
 	.hand-ctn {
@@ -64,6 +69,7 @@
 	.hand {
 		width: 50%;
 		border-radius: 16px;
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 	}
 
 	.seconds-hand-ctn {
