@@ -73,7 +73,7 @@
 	}
 
 	.seconds-hand-ctn {
-        transition: transform 0.05s ease-in-out;
+		transition: transform 0.05s ease-in-out;
 		width: 10px;
 		z-index: 3;
 	}
