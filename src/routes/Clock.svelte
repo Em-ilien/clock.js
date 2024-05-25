@@ -19,12 +19,15 @@
 
 <div class="clock-ctn">
 	<div class="clock">
-		<div class="seconds-hand-ctn hand-ctn" style:transform={`rotate(${seconds * 6}deg)`}>
+		<div
+			class="seconds-hand-ctn hand-ctn"
+			style:transform={`rotate(${hours * 60 * 60 * 6 + minutes * 60 * 6 + seconds * 6}deg)`}
+		>
 			<div class="seconds-hand hand"></div>
 		</div>
 		<div
 			class="minutes-hand-ctn hand-ctn"
-			style:transform={`rotate(${minutes * 6 + seconds / 10}deg)`}
+			style:transform={`rotate(${hours * 60 * 60 * 6 + minutes * 6 + seconds / 10}deg)`}
 		>
 			<div class="minutes-hand hand"></div>
 		</div>
