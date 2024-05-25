@@ -1,25 +1,28 @@
 <script>
-	let secondsHandTransform = 0;
+	let hours;
+	let minutes;
+	let seconds;
+
 	setInterval(() => {
-		secondsHandTransform += 6;
+		const date = new Date();
+		hours = date.getHours();
+		minutes = date.getMinutes();
+		seconds = date.getSeconds();
 	}, 1000);
 </script>
 
 <div class="clock-ctn">
 	<div class="clock">
-		<div class="seconds-hand-ctn hand-ctn" style:transform={`rotate(${secondsHandTransform}deg)`}>
+		<div class="seconds-hand-ctn hand-ctn" style:transform={`rotate(${seconds * 6}deg)`}>
 			<div class="seconds-hand hand"></div>
 		</div>
 		<div
 			class="minutes-hand-ctn hand-ctn"
-			style:transform={`rotate(${secondsHandTransform / 60}deg)`}
+			style:transform={`rotate(${minutes * 6 + seconds / 10}deg)`}
 		>
 			<div class="minutes-hand hand"></div>
 		</div>
-		<div
-			class="hours-hand-ctn hand-ctn"
-			style:transform={`rotate(${secondsHandTransform / 3600}deg)`}
-		>
+		<div class="hours-hand-ctn hand-ctn" style:transform={`rotate(${hours * 30 + minutes / 2}deg)`}>
 			<div class="hours-hand hand"></div>
 		</div>
 		<div class="center"></div>
@@ -58,8 +61,8 @@
 	}
 
 	.seconds-hand-ctn {
-		background-color: #ff000005;
 		width: 20px;
+		z-index: 3;
 	}
 
 	.seconds-hand {
@@ -69,8 +72,8 @@
 	}
 
 	.minutes-hand-ctn {
-		background-color: #00ff0005;
 		width: 30px;
+		z-index: 2;
 	}
 
 	.minutes-hand {
@@ -80,8 +83,8 @@
 	}
 
 	.hours-hand-ctn {
-		background-color: #0000ff05;
 		width: 40px;
+		z-index: 1;
 	}
 
 	.hours-hand {
@@ -96,5 +99,6 @@
 		background-color: #000000;
 		border-radius: 50%;
 		position: absolute;
+		z-index: 4;
 	}
 </style>
