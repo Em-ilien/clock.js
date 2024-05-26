@@ -1,4 +1,6 @@
 <script>
+	import { onMount } from 'svelte';
+
 	let hours;
 	let minutes;
 	let seconds;
@@ -14,6 +16,14 @@
 		hours = now.getHours();
 		minutes = now.getMinutes();
 		seconds = now.getSeconds();
+	}
+
+	let audio;
+	onMount(() => (audio = new Audio('./src/routes/tic.mp3')));
+
+	$: {
+		seconds;
+		audio?.play();
 	}
 </script>
 
