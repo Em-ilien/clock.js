@@ -1,24 +1,9 @@
 <script>
-	import Clock from './Clock.svelte';
+	import Clock from '$lib/Clock.svelte';
 </script>
 
-<section class="app">
-	<Clock />
-</section>
+<h1>Welcome to your library project</h1>
+<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
+<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
-<style>
-	:global(body),
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
-
-	.app {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100vh;
-		width: 100vw;
-	}
-</style>
+<Clock />

@@ -1,7 +1,7 @@
-<script>
-	let hours;
-	let minutes;
-	let seconds;
+<script lang="ts">
+	let hours: number;
+	let minutes: number;
+	let seconds: number;
 
 	setInterval(() => {
 		computeHands();
