@@ -55,7 +55,7 @@
 		width: calc(100% - 2 * 15px);
 		height: calc(100% - 2 * 15px);
 		background: #e8c9a957;
-		background-image: url('/src/lib/clock.png');
+		background-image: url('$lib/clock.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
