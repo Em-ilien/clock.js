@@ -32,6 +32,8 @@ Here is an example of using Clock.js:
 </div>
 ```
 
+/!\ The [clock background image](./src/lib/clock.png) has to be placed into your main svelte application's $lib folder (path /src/lib/clock.png).
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
