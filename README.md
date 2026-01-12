@@ -98,5 +98,11 @@ To preview the production build with `npm run preview`.
 ## Publishing
 
 ```bash
+npm version patch   # 2.0.4 → 2.0.5
+npm version minor   # 2.0.4 → 2.1.0
+npm version major   # 2.0.4 → 3.0.0
+
 npm publish
+npm login
 ```
+
